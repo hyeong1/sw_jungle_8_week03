@@ -11,7 +11,7 @@ for _ in range(k):
     coins.append([value, count])
 
 for value, count in coins:  # 가능한 모든 동전에 대해서
-    for target in range(T, -1, -1):  # 거꾸로 확인
+    for target in range(T, 0, -1):  # 거꾸로 확인
         cnt = 1
         while cnt <= count and target - (value * cnt) >= 0:
             dp[target] = dp[target - (value * cnt)] + dp[target]
