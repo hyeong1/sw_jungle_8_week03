@@ -20,7 +20,7 @@ for i in range(1, len_a):
 print(dp[len_a-1][len_b-1])
 
 start_r, start_c = len_a - 1, len_b - 1
-direction = [[-1, 0], [0, -1]]  # 위, 왼쪽 대각선, 왼쪽
+direction = [[-1, 0], [0, -1]]  # 위, 왼쪽
 stack = []
 while start_r > 0 and start_c > 0:
     for dr, dc in direction:
